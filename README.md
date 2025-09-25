@@ -36,3 +36,6 @@ python main.py
 Large .pth model files are excluded.
 
 This project was developed as a deep learning practice project for image classification.
+
+phytorch indirilen modelin kaynağı:
+"https://download.pytorch.org/models/alexnet-owt-7be5be79.pth"
