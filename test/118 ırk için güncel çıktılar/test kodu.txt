@@ -1,0 +1,75 @@
+#MERT IYIBICER
+#21100011070
+#EGİTİLEN MODELİN TEST KODU
+#TEST OLARAK FARKLI OLARAK 118 IRKTAN 1180 VERİ ALINMISTIR.
+
+
+import torch
+import torch.nn as nn
+from torchvision import datasets, transforms
+import torchvision.models as models
+
+# Veri dönüşümleri tanımlayın
+transform = transforms.Compose([
+    transforms.Resize((224, 224)),  # Resimleri AlexNet giriş boyutuna yeniden boyutlandırın
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+])
+
+# Test verilerinin bulunduğu dizin
+test_data_path = "D:/PHYTON/pythonProject30/test"
+
+# Test veri setini oluşturuldu
+test_dataset = datasets.ImageFolder(test_data_path, transform=transform)
+
+# Test veri yükleyicisini tanımlandı.
+test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=32, shuffle=False)
+
+# Eğitilen model yüklenildi.
+model_path = "model_weights_118_classes.pth"  # Eğittiğiniz modelin ağırlıklarının kaydedildiği dosya
+num_classes = 118
+alexnet = models.alexnet(pretrained=True)
+alexnet.classifier[6] = nn.Linear(4096, num_classes)  # Sınıflandırıcı katmanını yeniden tanımlanmıştır.
+alexnet.load_state_dict(torch.load(model_path))  # Eğitilmiş model ağırlıkları yüklenildi.
+
+# Cihazı belirleyin (GPU kullanılabilirse)
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+alexnet = alexnet.to(device)
+
+# Kayıp fonksiyonunu tanımlandı.
+criterion = nn.CrossEntropyLoss()
+
+
+# Modelin değerlendirilmesi
+def evaluate_model(model, data_loader, criterion, device):
+    model.eval()
+    loss = 0
+    correct = 0
+    total = 0
+    class_correct = [0] * num_classes  # Her sınıf için doğru tahminlerin ve toplam örnek sayısının listesi başlatılır.
+    class_total = [0] * num_classes
+    with torch.no_grad():
+        for inputs, labels in data_loader:
+            inputs, labels = inputs.to(device), labels.to(device)
+            outputs = model(inputs)
+            loss += criterion(outputs, labels).item()  # Kaybın hesaplanması ve toplam kayba eklenmesi.
+            _, predicted = torch.max(outputs, 1)
+            total += labels.size(0)   # Toplam örnek sayısının güncellenmesi
+            correct += (predicted == labels).sum().item()   # Her bir örnek için sınıf bazında doğru tahmin sayısının güncellenmesi.
+            for i in range(len(labels)):
+                label = labels[i]
+                prediction = predicted[i]
+                if label == prediction:
+                    class_correct[label] += 1
+                class_total[label] += 1
+    avg_loss = loss / len(data_loader)
+    accuracy = correct / total
+    class_accuracies = [100 * class_correct[i] / class_total[i] if class_total[i] > 0 else 0 for i in range(num_classes)]   # Sınıf bazında doğruluk oranlarının hesaplanması.
+    return avg_loss, accuracy, class_accuracies
+
+
+test_loss, test_accuracy, class_accuracies = evaluate_model(alexnet, test_loader, criterion, device)
+print(f'Test Loss: {test_loss:.4f}, Test Accuracy: {test_accuracy:.4f}')
+print("Class-wise Accuracies:")
+for i in range(num_classes):
+    print(f'Class {i} Accuracy: {class_accuracies[i]:.2f}%')

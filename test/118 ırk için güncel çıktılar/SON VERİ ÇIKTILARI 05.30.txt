@@ -1,0 +1,261 @@
+Epoch [1/13], Train Loss: 2.2560, Train Accuracy: 0.4125, Test Loss: 1.3257, Test Accuracy: 0.6186
+Epoch [2/13], Train Loss: 1.2521, Train Accuracy: 0.6331, Test Loss: 0.7906, Test Accuracy: 0.7750
+Epoch [3/13], Train Loss: 0.7856, Train Accuracy: 0.7612, Test Loss: 0.4245, Test Accuracy: 0.8729
+Epoch [4/13], Train Loss: 0.4402, Train Accuracy: 0.8638, Test Loss: 0.1865, Test Accuracy: 0.9518
+Epoch [5/13], Train Loss: 0.2266, Train Accuracy: 0.9304, Test Loss: 0.1279, Test Accuracy: 0.9657
+Epoch [6/13], Train Loss: 0.1177, Train Accuracy: 0.9674, Test Loss: 0.0648, Test Accuracy: 0.9842
+Epoch [7/13], Train Loss: 0.0804, Train Accuracy: 0.9798, Test Loss: 0.0389, Test Accuracy: 0.9911
+Epoch [8/13], Train Loss: 0.0514, Train Accuracy: 0.9896, Test Loss: 0.0267, Test Accuracy: 0.9954
+Epoch [9/13], Train Loss: 0.0331, Train Accuracy: 0.9938, Test Loss: 0.0465, Test Accuracy: 0.9896
+Epoch [10/13], Train Loss: 0.0251, Train Accuracy: 0.9958, Test Loss: 0.0192, Test Accuracy: 0.9965
+Epoch [11/13], Train Loss: 0.0227, Train Accuracy: 0.9960, Test Loss: 0.0221, Test Accuracy: 0.9958
+Epoch [12/13], Train Loss: 0.0170, Train Accuracy: 0.9966, Test Loss: 0.0121, Test Accuracy: 0.9981
+Epoch [13/13], Train Loss: 0.0177, Train Accuracy: 0.9966, Test Loss: 0.0173, Test Accuracy: 0.9958
+                                                 precision    recall  f1-score   support
+
+                     n02085620-Chihuahua - test       1.00      1.00      1.00        22
+              n02085782-Japanese_spaniel - test       0.85      1.00      0.92        22
+                   n02085936-Maltese_dog - test       1.00      1.00      1.00        22
+                      n02086079-Pekinese - test       1.00      1.00      1.00        22
+                      n02086240-Shih-Tzu - test       1.00      1.00      1.00        22
+              n02086646-Blenheim_spaniel - test       1.00      0.91      0.95        22
+                      n02086910-papillon - test       1.00      0.95      0.98        22
+                   n02087046-toy_terrier - test       1.00      1.00      1.00        22
+           n02087394-Rhodesian_ridgeback - test       1.00      1.00      1.00        22
+                  n02088094-Afghan_hound - test       1.00      1.00      1.00        22
+                        n02088238-basset - test       1.00      1.00      1.00        22
+                        n02088364-beagle - test       1.00      1.00      1.00        22
+                    n02088466-bloodhound - test       1.00      1.00      1.00        22
+                      n02088632-bluetick - test       1.00      1.00      1.00        22
+       n02089078-black-and-tan_coonhound - test       1.00      1.00      1.00        22
+                         n02089867-Walker_hound       1.00      0.95      0.98        22
+              n02089973-English_foxhound - test       0.96      1.00      0.98        22
+                       n02090379-redbone - test       1.00      1.00      1.00        22
+                         n02090622-borzoi- test       1.00      1.00      1.00        22
+               n02090721-Irish_wolfhound - test       1.00      1.00      1.00        22
+             n02091032-Italian_greyhound - test       1.00      1.00      1.00        22
+                       n02091134-whippet - test       1.00      1.00      1.00        22
+                  n02091244-Ibizan_hound - test       1.00      1.00      1.00        22
+            n02091467-Norwegian_elkhound - test       1.00      1.00      1.00        22
+                    n02091635-otterhound - test       1.00      1.00      1.00        22
+                        n02091831-Saluki - test       1.00      1.00      1.00        22
+            n02092002-Scottish_deerhound - test       1.00      1.00      1.00        22
+                    n02092339-Weimaraner - test       1.00      1.00      1.00        22
+     n02093256-Staffordshire_bullterrier - test       1.00      1.00      1.00        22
+n02093428-American_Staffordshire_terrier - test       1.00      1.00      1.00        22
+            n02093647-Bedlington_terrier - test       1.00      1.00      1.00        22
+                n02093754-Border_terrier - test       1.00      1.00      1.00        22
+            n02093859-Kerry_blue_terrier - test       1.00      1.00      1.00        22
+                 n02093991-Irish_terrier - test       1.00      0.95      0.98        22
+                n02094114-Norfolk_terrier- test       1.00      1.00      1.00        22
+               n02094258-Norwich_terrier - test       1.00      1.00      1.00        22
+             n02094433-Yorkshire_terrier - test       1.00      1.00      1.00        22
+       n02095314-wire-haired_fox_terrier - test       0.96      1.00      0.98        22
+              n02095570-Lakeland_terrier - test       1.00      1.00      1.00        22
+              n02095889-Sealyham_terrier - test       1.00      1.00      1.00        22
+                      n02096051-Airedale - test       1.00      1.00      1.00        22
+                         n02096177-cairn - test       1.00      1.00      1.00        22
+            n02096294-Australian_terrier - test       1.00      1.00      1.00        22
+                n02096437-Dandie_Dinmont - test       1.00      1.00      1.00        22
+                   n02096585-Boston_bull - test       1.00      1.00      1.00        22
+           n02097047-miniature_schnauzer - test       1.00      1.00      1.00        22
+               n02097130-giant_schnauzer - test       1.00      0.95      0.98        22
+            n02097209-standard_schnauzer - test       0.96      1.00      0.98        22
+                n02097298-Scotch_terrier - test       1.00      1.00      1.00        22
+               n02097474-Tibetan_terrier - test       1.00      1.00      1.00        22
+                 n02097658-silky_terrier - test       1.00      1.00      1.00        22
+   n02098105-soft-coated_wheaten_terrier - test       1.00      1.00      1.00        22
+   n02098286-West_Highland_white_terrier - test       1.00      1.00      1.00        22
+                         n02098413-Lhasa - test       1.00      1.00      1.00        22
+         n02099267-flat-coated_retriever - test       1.00      1.00      1.00        22
+        n02099429-curly-coated_retriever - test       1.00      1.00      1.00        22
+              n02099601-golden_retriever - test       1.00      1.00      1.00        22
+            n02099712-Labrador_retriever - test       1.00      1.00      1.00        22
+      n02099849-Chesapeake_Bay_retriever - test       1.00      1.00      1.00        22
+   n02100236-German_short-haired_pointer - test       1.00      1.00      1.00        22
+                        n02100583-vizsla - test       1.00      1.00      1.00        22
+                n02100735-English_setter - test       1.00      1.00      1.00        22
+                  n02100877-Irish_setter - test       1.00      1.00      1.00        22
+                 n02101006-Gordon_setter - test       1.00      1.00      1.00        22
+              n02101388-Brittany_spaniel - test       1.00      1.00      1.00        22
+                       n02101556-clumber - test       1.00      1.00      1.00        22
+              n02102040-English_springer - test       1.00      0.95      0.98        22
+        n02102177-Welsh_springer_spaniel - test       1.00      1.00      1.00        22
+                n02102318-cocker_spaniel - test       1.00      1.00      1.00        22
+                n02102480-Sussex_spaniel - test       1.00      1.00      1.00        22
+           n02102973-Irish_water_spaniel - test       1.00      1.00      1.00        22
+                        n02104029-kuvasz - test       1.00      1.00      1.00        22
+                    n02104365-schipperke - test       1.00      1.00      1.00        22
+                   n02105056-groenendael - test       1.00      1.00      1.00        22
+                      n02105162-malinois - test       1.00      1.00      1.00        22
+                        n02105251-briard - test       1.00      1.00      1.00        22
+                        n02105412-kelpie - test       1.00      1.00      1.00        22
+                    n02105505-komondor - test22       1.00      1.00      1.00        22
+           n02105641-Old_English_sheepdog -test       1.00      1.00      1.00        22
+              n02105855-Shetland_sheepdog -test       1.00      1.00      1.00        22
+                        n02106030-collie - test       0.92      1.00      0.96        22
+                 n02106166-Border_collie - test       1.00      0.91      0.95        22
+          n02106382-Bouvier_des_Flandres - test       1.00      1.00      1.00        22
+                    n02106550-Rottweiler - test       1.00      1.00      1.00        22
+               n02106662-German_shepherd - test       1.00      1.00      1.00        22
+                      n02107142-Doberman - test       1.00      1.00      1.00        22
+            n02107312-miniature_pinscher - test       1.00      1.00      1.00        22
+          n02107683-Bernese_mountain_dog - test       1.00      0.95      0.98        22
+                   n02107908-Appenzeller - test       0.96      1.00      0.98        22
+                   n02108000-EntleBucher - test       1.00      1.00      1.00        22
+                         n02108089-boxer - test       1.00      1.00      1.00        22
+                  n02108422-bull_mastiff - test       1.00      1.00      1.00        22
+               n02108551-Tibetan_mastiff - test       1.00      1.00      1.00        22
+                n02108915-French_bulldog - test       1.00      1.00      1.00        22
+                    n02109047-Great_Dane - test       1.00      1.00      1.00        22
+                 n02109525-Saint_Bernard - test       1.00      1.00      1.00        22
+                    n02109961-Eskimo_dog - test       1.00      1.00      1.00        22
+                      n02110063-malamute - test       1.00      1.00      1.00        22
+                n02110185-Siberian_husky - test       1.00      1.00      1.00        22
+                 n02110627-affenpinscher - test       1.00      1.00      1.00        22
+                       n02110806-basenji - test       1.00      1.00      1.00        22
+                           n02110958-pug - test       1.00      1.00      1.00        22
+                      n02111129-Leonberg - test       1.00      1.00      1.00        22
+                   n02111277-Newfoundland- test       1.00      1.00      1.00        22
+                n02111500-Great_Pyrenees - test       1.00      1.00      1.00        22
+                       n02111889-Samoyed - test       1.00      1.00      1.00        22
+                    n02112018-Pomeranian - test       1.00      1.00      1.00        22
+                          n02112137-chow - test       1.00      1.00      1.00        22
+                      n02112350-keeshond - test       1.00      1.00      1.00        22
+             n02112706-Brabancon_griffon - test       1.00      1.00      1.00        22
+                      n02113023-Pembroke - test       1.00      1.00      1.00        22
+                      n02113186-Cardigan - test       1.00      1.00      1.00        22
+                    n02113624-toy_poodle - test       1.00      1.00      1.00        22
+              n02113712-miniature_poodle - test       1.00      0.95      0.98        22
+               n02113799-standard_poodle - test       0.96      1.00      0.98        22
+              n02113978-Mexican_hairless - test       1.00      1.00      1.00        22
+                         n02115641-dingo - test       1.00      1.00      1.00        22
+                         n02115913-dhole - test       1.00      1.00      1.00        22
+
+                                       accuracy                           1.00      2596
+                                      macro avg       1.00      1.00      1.00      2596
+                                   weighted avg       1.00      1.00      1.00      2596
+
+
+---------------TEST SONUCU -------------------
+
+Test Loss: 0.0173, Test Accuracy: 0.9958
+Class-wise Accuracies:
+Class 0 Accuracy: 100.00%
+Class 1 Accuracy: 100.00%
+Class 2 Accuracy: 100.00%
+Class 3 Accuracy: 100.00%
+Class 4 Accuracy: 100.00%
+Class 5 Accuracy: 90.91%
+Class 6 Accuracy: 95.45%
+Class 7 Accuracy: 100.00%
+Class 8 Accuracy: 100.00%
+Class 9 Accuracy: 100.00%
+Class 10 Accuracy: 100.00%
+Class 11 Accuracy: 100.00%
+Class 12 Accuracy: 100.00%
+Class 13 Accuracy: 100.00%
+Class 14 Accuracy: 100.00%
+Class 15 Accuracy: 95.45%
+Class 16 Accuracy: 100.00%
+Class 17 Accuracy: 100.00%
+Class 18 Accuracy: 100.00%
+Class 19 Accuracy: 100.00%
+Class 20 Accuracy: 100.00%
+Class 21 Accuracy: 100.00%
+Class 22 Accuracy: 100.00%
+Class 23 Accuracy: 100.00%
+Class 24 Accuracy: 100.00%
+Class 25 Accuracy: 100.00%
+Class 26 Accuracy: 100.00%
+Class 27 Accuracy: 100.00%
+Class 28 Accuracy: 100.00%
+Class 29 Accuracy: 100.00%
+Class 30 Accuracy: 100.00%
+Class 31 Accuracy: 100.00%
+Class 32 Accuracy: 100.00%
+Class 33 Accuracy: 95.45%
+Class 34 Accuracy: 100.00%
+Class 35 Accuracy: 100.00%
+Class 36 Accuracy: 100.00%
+Class 37 Accuracy: 100.00%
+Class 38 Accuracy: 100.00%
+Class 39 Accuracy: 100.00%
+Class 40 Accuracy: 100.00%
+Class 41 Accuracy: 100.00%
+Class 42 Accuracy: 100.00%
+Class 43 Accuracy: 100.00%
+Class 44 Accuracy: 100.00%
+Class 45 Accuracy: 100.00%
+Class 46 Accuracy: 95.45%
+Class 47 Accuracy: 100.00%
+Class 48 Accuracy: 100.00%
+Class 49 Accuracy: 100.00%
+Class 50 Accuracy: 100.00%
+Class 51 Accuracy: 100.00%
+Class 52 Accuracy: 100.00%
+Class 53 Accuracy: 100.00%
+Class 54 Accuracy: 100.00%
+Class 55 Accuracy: 100.00%
+Class 56 Accuracy: 100.00%
+Class 57 Accuracy: 100.00%
+Class 58 Accuracy: 100.00%
+Class 59 Accuracy: 100.00%
+Class 60 Accuracy: 100.00%
+Class 61 Accuracy: 100.00%
+Class 62 Accuracy: 100.00%
+Class 63 Accuracy: 100.00%
+Class 64 Accuracy: 100.00%
+Class 65 Accuracy: 100.00%
+Class 66 Accuracy: 95.45%
+Class 67 Accuracy: 100.00%
+Class 68 Accuracy: 100.00%
+Class 69 Accuracy: 100.00%
+Class 70 Accuracy: 100.00%
+Class 71 Accuracy: 100.00%
+Class 72 Accuracy: 100.00%
+Class 73 Accuracy: 100.00%
+Class 74 Accuracy: 100.00%
+Class 75 Accuracy: 100.00%
+Class 76 Accuracy: 100.00%
+Class 77 Accuracy: 100.00%
+Class 78 Accuracy: 100.00%
+Class 79 Accuracy: 100.00%
+Class 80 Accuracy: 100.00%
+Class 81 Accuracy: 90.91%
+Class 82 Accuracy: 100.00%
+Class 83 Accuracy: 100.00%
+Class 84 Accuracy: 100.00%
+Class 85 Accuracy: 100.00%
+Class 86 Accuracy: 100.00%
+Class 87 Accuracy: 95.45%
+Class 88 Accuracy: 100.00%
+Class 89 Accuracy: 100.00%
+Class 90 Accuracy: 100.00%
+Class 91 Accuracy: 100.00%
+Class 92 Accuracy: 100.00%
+Class 93 Accuracy: 100.00%
+Class 94 Accuracy: 100.00%
+Class 95 Accuracy: 100.00%
+Class 96 Accuracy: 100.00%
+Class 97 Accuracy: 100.00%
+Class 98 Accuracy: 100.00%
+Class 99 Accuracy: 100.00%
+Class 100 Accuracy: 100.00%
+Class 101 Accuracy: 100.00%
+Class 102 Accuracy: 100.00%
+Class 103 Accuracy: 100.00%
+Class 104 Accuracy: 100.00%
+Class 105 Accuracy: 100.00%
+Class 106 Accuracy: 100.00%
+Class 107 Accuracy: 100.00%
+Class 108 Accuracy: 100.00%
+Class 109 Accuracy: 100.00%
+Class 110 Accuracy: 100.00%
+Class 111 Accuracy: 100.00%
+Class 112 Accuracy: 100.00%
+Class 113 Accuracy: 95.45%
+Class 114 Accuracy: 100.00%
+Class 115 Accuracy: 100.00%
+Class 116 Accuracy: 100.00%
+Class 117 Accuracy: 100.00%
